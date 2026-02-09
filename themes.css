@@ -1,0 +1,151 @@
+/* ===== LIGHT MODE (default) ===== */
+:root {
+    /* Farver */
+    --bg-color: #f5f1eb;
+    --surface-color: #ffffff;
+    --text-color: #333333;
+    --text-light: #666666;
+    --nav-bg: #2a4365;
+    --nav-text: #ffffff;
+    --btn-bg: #2a4365;
+    --btn-text: #ffffff;
+    --accent-color: #2c5282;
+    --border-color: #e2e8f0;
+    
+    /* Skygger og effekter */
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --theme-toggle-bg: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== DARK MODE ===== */
+:root:has(#theme-toggle:checked) {
+    /* Farver */
+    --bg-color: #1a202c;
+    --surface-color: #36445d;
+    --text-color: #e2e8f0;
+    --text-light: #cbd5e0;
+    --nav-bg: #8e9cb9;
+    --nav-text: #f7fafc;
+    --btn-bg: #f0ecde;
+    --btn-text: #1a202c;
+    --accent-color: #a3b3e0;
+    --border-color: #05132b;
+    
+    /* Skygger og effekter */
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --theme-toggle-bg: rgba(247, 250, 252, 0.15);
+}
+
+/* Skjul checkbox */
+.theme-toggle {
+    display: none;
+}
+
+/* themes.css - tilføj dette nederst */
+
+/* Theme toggle styling fortsat */
+.theme-toggle {
+    display: none;
+}
+
+/* Page title på tema sider */
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin: 2rem 0;
+}
+
+.tema-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+/* Tema content på tema sider */
+.tema-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+}
+
+.tema-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.tema-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
+.tema-text h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.tema-text p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.tema-opgaver {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tema-opgave-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    margin-top: 1.5rem;
+}
+
+.tema-opgave-link {
+    display: inline-block;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.tema-opgave-link:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Responsiv layout for tema sider */
+@media (min-width: 768px) {
+    .tema-block {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .tema-block:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .tema-image {
+        width: 50%;
+        height: 300px;
+    }
+    
+    .tema-text {
+        width: 50%;
+        padding: 0 2rem;
+    }
+}

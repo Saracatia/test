@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sara Catia Petersen</title>
+    
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="components.css">
+    
+    <link rel="icon" type="image/png" href="billeder /faneblad.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="billeder /logosara.png" alt="Logo" class="logo">
+                </a>
+            </div>
+   
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle">
+                <label for="theme-toggle" class="theme-switch">Skift tema</label>
+            </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- Resten af koden forbliver uændret -->
+<main>
+    <!-- Tilbage-pil -->
+    <div class="tema-header">
+        <a href="projekter.html" class="back-arrow">←</a>
+    </div>
+    
+    <!-- Hovedindhold -->
+    <h1 class="page-title">Tema 4</h1>
+    <h2 class="tema-subtitle">Grundlæggende brugergrænsefladeudvikling</h2>
+    
+    <div class="tema-content">
+        <!-- LØSNING: Billede venstre, tekst højre -->
+        <section class="tema-block">
+            <img src="billeder /dandelion.webp" alt="Løsning" class="tema-image">
+            <div class="tema-text">
+                <h3>Løsning</h3>
+                <p>Løsningen er en klikbar prototype udviklet i Figma med udgangspunkt i et emergency site, videreudviklet til konceptet Muterende mælkebøtter. Jeg har arbejdet med et tydeligt visuelt hierarki, 
+                    enkel navigation og klare klikflader, så brugeren hurtigt kan forstå struktur, indhold og handlinger. Farver, typografi og ikoner bruges bevidst til at signalere vigtighed og skabe overblik.</p>
+            </div>
+        </section>
+        
+        <!-- PROCESS: Tekst venstre, billede højre -->
+         
+        <section class="tema-block">
+             <img src="billeder /mutant1.webp" alt="Process" class="tema-image">
+            <div class="tema-text">
+                <h3>Process</h3>
+                <p>Jeg startede med idéudvikling og målgruppeovervejelser og omsatte dem til wireframes. Herefter opbyggede jeg et mindre designsystem i Figma med farver, typografi og genbrugelige UI-komponenter.
+                    Jeg arbejdede med flows mellem sider og finpudsede interaktionsdetaljer som hover- og active-states, så feedbacken føles tydelig og konsekvent. Fokus var på sammenhæng, genkendelighed og brugervenlighed.</p>
+            </div>
+        </section>
+        
+        <!-- LÆRING: Billede venstre, tekst højre -->
+        <section class="tema-block">
+            <img src="billeder /mutant2.webp" alt="Læring" class="tema-image">
+            <div class="tema-text">
+                <h3>Læring</h3>
+                <p>Arbejdet med Tema 4 har givet mig en større forståelse for, hvordan UI og interaktion hænger sammen i en brugeroplevelse.
+                    Jeg har lært, at klar informationsarkitektur og visuelt hierarki gør navigation mere intuitiv, og at konsistente komponenter 
+                    og states skaber tryghed for brugeren. Tydelig feedback og veldefinerede klikflader er afgørende for at vise, hvad der er interaktivt – også i en prototype uden kode.</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- OPGAVER: Centreret -->
+    <section class="tema-opgaver">
+        <h3>Opgaver i tema</h3>
+        <div class="tema-opgave-card">
+            <p>Her vises de specifikke opgaver og øvelser jeg arbejdede med i temaet.</p>
+           
+        </div>
+    </section>
+</main>
+
+<script src="nav.js"></script>
+</body>
+</html>

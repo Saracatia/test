@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sara Catia Petersen</title>
+    
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="components.css">
+    
+    <link rel="icon" type="image/png" href="billeder /faneblad.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="billeder /logosara.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            
+            
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle">
+                <label for="theme-toggle" class="theme-switch">Skift tema</label>
+            </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- Resten af koden forbliver uændret -->
+<main>
+    <!-- Tilbage-pil -->
+    <div class="tema-header">
+        <a href="projekter.html" class="back-arrow">←</a>
+    </div>
+    
+    <!-- Hovedindhold -->
+    <h1 class="page-title">Tema 1</h1>
+    <h2 class="tema-subtitle">Introuge</h2>
+    
+    <div class="tema-content">
+        <!-- LØSNING: Billede venstre, tekst højre -->
+        <section class="tema-block">
+            <img src="billeder /tema1.webp" alt="Løsning" class="tema-image">
+            <div class="tema-text">
+                <h3>Løsning</h3>
+                <p>I introugen arbejdede jeg med at udvikle mit første personlige digitale præsentationsmateriale. 
+                    Jeg designede og producerede et digitalt præsentationskort, som havde til formål at kommunikere min identitet, 
+                    mine interesser og min tilgang til studiet. Derudover opsatte jeg mit første website og arbejdede med publicering via GitHub, 
+                    hvilket gav mig en praktisk forståelse for, hvordan digitale produkter kan gøres tilgængelige online.</p>
+            </div>
+        </section>
+        
+        <!-- PROCESS: Tekst venstre, billede højre -->
+         
+        <section class="tema-block">
+             <img src="billeder /praesentationskort.webp" alt="Process" class="tema-image">
+            <div class="tema-text">
+                <h3>Process</h3>
+                <p>Arbejdsprocessen bestod af en kombination af korte faglige oplæg, selvstændigt arbejde og gruppearbejde. Jeg blev introduceret til Figma som designværktøj, 
+                    hvilket var nyt for mig, og lærte at bruge det som et redskab til idéudvikling og visuel kommunikation. Samtidig deltog jeg i en gruppeopgave, hvor vi i fællesskab 
+                    udviklede og producerede en video med udgangspunkt i en fælles interesse. Parallelt med dette blev vi introduceret til HTML, som jeg brugte til at opbygge strukturen i mit første website. 
+                    Arbejdet med HTML gav mig en grundlæggende forståelse for, hvordan indhold på nettet er opbygget, og hvordan design og funktion hænger sammen.</p>
+            </div>
+        </section>
+        
+        <!-- LÆRING: Billede venstre, tekst højre -->
+        <section class="tema-block">
+            <img src="billeder /firstsitekode.webp" alt="Læring" class="tema-image">
+            <div class="tema-text">
+                <h3>Læring</h3>
+                <p>Introugen gav mig et klart billede af, hvad multimediedesignuddannelsen indebærer, og hvilke kompetencer der forventes af en multimediedesigner. Jeg opnåede en grundlæggende forståelse for digitale 
+                    designprocesser, samarbejde i grupper og brugen af værktøjer som Figma, GitHub og HTML. Introduktionen til HTML og GitHub gav mig et vigtigt fundament for resten af semesteret og en forståelse for 
+                    både den tekniske opbygning og arbejdsprocessen bag webudvikling.</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- OPGAVER: Centreret -->
+    <section class="tema-opgaver">
+        <h3>Opgaver i tema</h3>
+        <div class="tema-opgave-card">
+            <p>Her vises de specifikke opgaver og øvelser jeg arbejdede med i temaet.</p>
+           <a href="https://saracatia.github.io/first_site/" class="tema-opgave-link" target="_blank">Se mit første website</a>
+        </div>
+    </section>
+</main>
+
+   <script src="nav.js"></script>
+</body>
+</html>

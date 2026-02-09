@@ -1,0 +1,155 @@
+/* Navigation - SIMPEL og kompakt */
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--nav-bg);
+    min-height: 60px;
+}
+
+/* Logo centreret */
+.logo-container {
+   position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto; /* Gør logoet klikbart */
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+}
+
+.nav-links{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.4rem;              /* mere luft mellem links */
+  list-style: none;
+  padding: 0;
+  margin-right: 0;          /* VIGTIG: fjern 60px */
+}
+
+.theme-toggle-container{
+  display: flex;
+  align-items: center;
+  margin-left: 1.2rem;   /* ekstra afstand fra “Projekter” */
+}
+
+.theme-switch{
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.28);
+  color: var(--nav-text);
+
+  padding: 0.55rem 1.1rem;
+  border-radius: 10px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.theme-switch:hover{
+  background: rgba(255,255,255,0.22);
+  transform: translateY(-1px);
+}
+
+
+
+.nav-links a {
+    color: var(--nav-text);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hamburger menu - KUN på mobile */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bar {
+    display: block;
+    width: 22px;
+    height: 2.5px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px){
+  .hamburger{ display:block; }
+
+  .nav-links{
+    display: none;
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    left: auto;
+
+    width: 40%;          /* 👈 30-40% */
+    max-width: 260px;
+    min-width: 180px;
+
+    background-color: var(--nav-bg);
+    flex-direction: column;
+    padding: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.active{ display:flex; }
+
+  .nav-links li{
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  /* behold logo i midten */
+  .logo{ height:30px; }
+
+  /* theme-knappen skal også ligge pænt i dropdown */
+  .theme-toggle-container{
+    justify-content: center;
+  }
+}
+    
+    .theme-switch {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Hamburger animation */
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-4px, 5px);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-4px, -5px);
+    }

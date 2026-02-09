@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sara Catia Petersen</title>
+    
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="components.css">
+    
+    <link rel="icon" type="image/png" href="billeder /faneblad.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="billeder /logosara.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle">
+                <label for="theme-toggle" class="theme-switch">Skift tema</label>
+            </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- Resten af koden forbliver uændret -->
+<main>
+    <!-- Tilbage-pil -->
+    <div class="tema-header">
+        <a href="projekter.html" class="back-arrow">←</a>
+    </div>
+    
+    <!-- Hovedindhold -->
+    <h1 class="page-title">Tema 3</h1>
+    <h2 class="tema-subtitle">Grundlæggende UX/UI</h2>
+    
+    <div class="tema-content">
+        <!-- LØSNING: Billede venstre, tekst højre -->
+        <section class="tema-block">
+            <img src="billeder /glutenfri.webp" alt="Løsning" class="tema-image">
+            <div class="tema-text">
+                <h3>Løsning</h3>
+                <p> Jeg udviklede en responsiv hjemmeside med fokus på en klar struktur og brugervenlig opbygning. Arbejdet tog udgangspunkt i mobile-first-princippet, 
+                    hvor jeg først designede til mobil og derefter skalerede layoutet til større skærme ved hjælp af media queries. Undervejs arbejdede jeg bevidst med 
+                    semantisk HTML og CSS Grid/Flexbox for at skabe et overskueligt og fleksibelt layout.</p>
+            </div>
+        </section>
+        
+        <!-- PROCESS: Tekst venstre, billede højre -->
+         
+        <section class="tema-block">
+             <img src="billeder /gluten2.webp" alt="Process" class="tema-image">
+            <div class="tema-text">
+                <h3>Process</h3>
+                <p>Jeg arbejdede med hele designprocessen for Glutenfri Førstehjælp - fra de første idéer og research til wireframes, prototyper og færdigt layout. 
+                    Det var fedt selv at være med hele vejen, og undervejs testede jeg løbende og justerede UI og UX for at skabe en hjemmeside, der er overskuelig og nem at bruge.</p>
+            </div>
+        </section>
+        
+        <!-- LÆRING: Billede venstre, tekst højre -->
+        <section class="tema-block">
+            <img src="billeder /gluten3.webp" alt="Læring" class="tema-image">
+            <div class="tema-text">
+                <h3>Læring</h3>
+                <p>Forløbet gav mig en større forståelse for, hvor vigtig brugeroplevelsen er, når man designer en hjemmeside. Jeg lærte, hvordan struktur, overblik og tydelige valg har stor betydning for, om en side er nem at bruge. 
+                    Gennem løbende test og justeringer blev jeg mere bevidst om, hvordan små ændringer i layout og indhold kan forbedre oplevelsen for brugeren.</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- OPGAVER: Centreret -->
+    <section class="tema-opgaver">
+        <h3>Opgaver i tema</h3>
+        <div class="tema-opgave-card">
+            <p>Her vises de specifikke opgaver og øvelser jeg arbejdede med i temaet.</p>
+           <a href="https://saracatia.github.io/glutenfri-help/" class="tema-opgave-link" target="_blank">Se mit glutenfri førstehjælpssite</a>
+        </div>
+    </section>
+</main>
+
+    <script src="nav.js"></script>
+</body>
+</html>

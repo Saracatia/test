@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sara Catia Petersen</title>
+    
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="components.css">
+    
+    <link rel="icon" type="image/png" href="billeder /faneblad.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="billeder /logosara.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle">
+                <label for="theme-toggle" class="theme-switch">Skift tema</label>
+            </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- Resten af koden forbliver uændret -->
+<main>
+    <!-- Tilbage-pil -->
+    <div class="tema-header">
+        <a href="projekter.html" class="back-arrow">←</a>
+    </div>
+    
+    <!-- Hovedindhold -->
+    <h1 class="page-title">Tema 2</h1>
+    <h2 class="tema-subtitle">Grundlæggende web</h2>
+    
+    <div class="tema-content">
+        <!-- LØSNING: Billede venstre, tekst højre -->
+        <section class="tema-block">
+            <img src="billeder /mobilesite2.webp" alt="Løsning" class="tema-image">
+            <div class="tema-text">
+                <h3>Løsning</h3>
+                <p>I Tema 2 lærte jeg at bygge simple websider med fokus på struktur og opbygning. Jeg arbejdede med HTML og CSS, så siden både fungerer og er overskuelig.</p>
+            </div>
+        </section>
+        
+        <!-- PROCESS: Tekst venstre, billede højre -->
+         
+        <section class="tema-block">
+             <img src="billeder /tema2.webp" alt="Process" class="tema-image">
+            <div class="tema-text">
+                <h3>Process</h3>
+                <p>Jeg startede med at planlægge sidens indhold og struktur. Derefter byggede jeg layoutet med HTML og stylede med CSS, og jeg justerede løbende for at skabe mere luft, bedre hierarki og en tydelig navigation.</p>
+            </div>
+        </section>
+        
+        <!-- LÆRING: Billede venstre, tekst højre -->
+        <section class="tema-block">
+            <img src="billeder /2tema2.webp" alt="Læring" class="tema-image">
+            <div class="tema-text">
+                <h3>Læring</h3>
+                <p>Jeg lærte, at semantisk struktur og god opbygning gør kodning meget lettere. Jeg blev også mere opmærksom på spacing og læsbarhed, så designet ikke føles presset.</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- OPGAVER: Centreret -->
+    <section class="tema-opgaver">
+        <h3>Opgaver i tema</h3>
+        <div class="tema-opgave-card">
+            <p>Her vises de specifikke opgaver og øvelser jeg arbejdede med i temaet.</p>
+           <a href="https://saracatia.github.io/mobilesite/" class="tema-opgave-link" target="_blank">Se mit mobile website</a>
+           <a href="https://saracatia.github.io/Fotomarthon/" class="tema-opgave-link" target="_blank">Se Fotomarthon</a>
+        </div>
+    </section>
+</main>
+
+    <script src="nav.js"></script>
+</body>
+</html>

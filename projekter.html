@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sara Catia Petersen</title>
+    
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="components.css">
+    
+    <link rel="icon" type="image/png" href="billeder /faneblad.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="billeder /logosara.png" alt="Logo" class="logo">
+                </a>
+            </div>
+         
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle">
+                <label for="theme-toggle" class="theme-switch">Skift tema</label>
+            </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- Resten af koden forbliver uændret -->
+
+<main>
+    <!-- Hovedtitel -->
+    <h1 class="page-title">Projekter</h1>
+
+    <!-- Desktop version med billeder og tekst -->
+    <section class="projects projects-desktop">
+        <article class="project-row">
+            <div class="project-card">
+                <h3 class="theme-number">Tema 1</h3>
+                <img src="billeder /tema1.webp" alt="Tema 1 billede" class="theme-image">
+                <h4 class="theme-title">Introuge</h4>
+                <div class="divider-small"></div>
+                <a href="tema1.html" class="theme-link">Klik</a>
+            </div>
+            <div class="project-text">
+                <p class="theme-description">Introduktion til multimediedesign-uddannelsen. Vi fik overblik over fagområder, fremtidige jobmuligheder og lærte at kode vores første HTML-sider samt producere introduktionsvideoer.</p>
+            </div>
+        </article>
+
+        <article class="project-row reverse">
+            <div class="project-card">
+                <h3 class="theme-number">Tema 2</h3>
+                <img src="billeder /mobilesite2.webp" alt="Tema 2 billede" class="theme-image">
+                <h4 class="theme-title">Grundlæggende web</h4>
+                <div class="divider-small"></div>
+                <a href="tema2.html" class="theme-link">Klik</a>
+            </div>
+            <div class="project-text">
+                <p class="theme-description">Grundlæggende HTML og CSS. Mobile-first design, responsivt layout med CSS Grid og Flexbox, samt introduktion til Figma for design af digitale brugergrænseflader.</p>
+            </div>
+        </article>
+
+        <article class="project-row">
+            <div class="project-card">
+                <h3 class="theme-number">Tema 3</h3>
+                <img src="billeder /glutenfri.webp" alt="Tema 3 billede" class="theme-image">
+                <h4 class="theme-title">Grundlæggende UX/UI</h4>
+                <div class="divider-small"></div>
+                <a href="tema3.html" class="theme-link">Klik</a>
+            </div>
+            <div class="project-text">
+                <p class="theme-description">UX/UI-design med fokus på brugeroplevelse. Vi arbejdede med research, wireframing, prototyping og usability testing for at udvikle brugervenlige digitale løsninger.</p>
+            </div>
+        </article>
+
+        <article class="project-row reverse">
+            <div class="project-card">
+                <h3 class="theme-number">Tema 4</h3>
+                <img src="billeder /dandelion (1).webp" alt="Tema 4 billede" class="theme-image">
+                <h4 class="theme-title">Grundlæggende brugergrænsefladeudvikling</h4>
+                <div class="divider-small"></div>
+                <a href="tema4.html" class="theme-link">Klik</a>
+            </div>
+            <div class="project-text">
+                <p class="theme-description">Avanceret CSS og introduktion til JavaScript. Arbejde med SVG-grafik i Adobe Illustrator og implementering af interaktive funktioner på websites.</p>
+            </div>
+        </article>
+
+        <article class="project-row">
+            <div class="project-card">
+                <h3 class="theme-number">Tema 5</h3>
+                <img src="billeder /2tema2.webp" alt="Tema 5 billede" class="theme-image">
+                <h4 class="theme-title">Grundlæggende indhold</h4>
+                <div class="divider-small"></div>
+                <a href="tema5.html" class="theme-link">Klik</a>
+            </div>
+            <div class="project-text">
+                <p class="theme-description">Videoproduktion, fotografering og redesign af hjemmesider. Vi arbejdede med præproduktion, indoptagelse og postproduktion, samt animeret vektorgrafik.</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Mobile version - simplere layout -->
+    <!-- Ændr dette i projekter.html -->
+<!-- Mobile version - simplere layout -->
+<section class="projects projects-mobile">
+    <!-- FJERN denne div: -->
+    <!-- <div class="mobile-logo-container">
+        <img src="billeder /sc-logo 2.webp" alt="Logo" class="mobile-logo">
+    </div> -->
+    
+    <div class="project-grid-mobile">
+        <!-- Tema 1 -->
+        <div class="project-item-mobile">
+            <h3>Tema 1</h3>
+            <h4>Introuge</h4>
+            <img src="billeder /tema1.webp" alt="Tema 1 billede" class="mobile-theme-image">
+            <p>Introduktion til multimediedesign-uddannelsen med første HTML-sider og introduktionsvideoer.</p>
+            <a href="tema1.html" class="project-button-mobile">Klik</a>
+        </div>
+        
+        <!-- Tema 2 -->
+        <div class="project-item-mobile">
+            <h3>Tema 2</h3>
+            <h4>Grundlæggende web</h4>
+            <img src="billeder /mobilesite2.webp" alt="Tema 2 billede" class="mobile-theme-image">
+            <p>Grundlæggende HTML og CSS med mobile-first design og responsivt layout.</p>
+            <a href="tema2.html" class="project-button-mobile">Klik</a>
+        </div>
+        
+        <!-- Tema 3 -->
+        <div class="project-item-mobile">
+            <h3>Tema 3</h3>
+            <h4>Grundlæggende UX/UI</h4>
+            <img src="billeder /glutenfri.webp" alt="Tema 3 billede" class="mobile-theme-image">
+            <p>UX/UI-design med research, wireframing, prototyping og usability testing.</p>
+            <a href="tema3.html" class="project-button-mobile">Klik</a>
+        </div>
+        
+        <!-- Tema 4 -->
+        <div class="project-item-mobile">
+            <h3>Tema 4</h3>
+            <h4>Grundlæggende brugergrænsefladeudvikling</h4>
+            <img src="billeder /dandelion (1).webp" alt="Tema 4 billede" class="mobile-theme-image">
+            <p>Avanceret CSS og JavaScript med SVG-grafik og interaktive funktioner.</p>
+            <a href="tema4.html" class="project-button-mobile">Klik</a>
+        </div>
+        
+        <!-- Tema 5 -->
+        <div class="project-item-mobile">
+            <h3>Tema 5</h3>
+            <h4>Grundlæggende indhold</h4>
+            <img src="billeder /2tema2.webp" alt="Tema 5 billede" class="mobile-theme-image">
+            <p>Videoproduktion, fotografering og redesign af hjemmesider.</p>
+            <a href="tema5.html" class="project-button-mobile">Klik</a>
+        </div>
+    </div>
+</section>
+</main>
+
+    <script src="nav.js"></script>
+</main>
+</div>
+
+</body>
+</html>
